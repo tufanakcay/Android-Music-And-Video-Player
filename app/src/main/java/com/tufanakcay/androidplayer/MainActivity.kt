@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
                 Log.e("allUser Error", t.toString())
             }
         })
-
         userListView.setOnItemClickListener { adapterView, view, i, l ->
             if ( i == 0 ) {
                 val intent = Intent(this, MusicPlayer::class.java)
@@ -51,6 +50,5 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-
     }
 }
